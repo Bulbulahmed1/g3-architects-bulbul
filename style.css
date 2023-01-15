@@ -1,0 +1,313 @@
+/* ----Style sheet for 2nd Assignment of #complete web development with Jhankar Mahbub --
+By using Grid & Flex also attempt to responsive- date-15.01.2023*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header section starts here */
+
+#container{
+    margin:auto;
+    width:1440px;
+    background-color: #FFFFFF;
+}
+/* --common style for all h1 used in this website */
+h1{
+    font-size:38px;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.heading h1{
+    font-weight: 900;
+}
+.navigation{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.navigation ul{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    text-decoration: none;
+    list-style: none;
+ }
+
+ /* ---end of header section--- */
+
+/* ---beginning of Hero Page ---*/
+ .hero{
+    display: grid;
+    justify-items: center;
+}
+
+.hero-left{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/* ---style used for all buttons in this website---- */
+.primary-button{
+    width: 180px;
+    height:64px;
+    font-size: 18px;
+    background-color:#FF900E;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+
+/*--- end of  of Hero Page--- */
+
+/* --- beginning of Featured Section--- */
+
+.features-list{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.feature-image{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+ }
+
+.right-div{
+    text-align: left;
+    width: 573px;
+    margin-left: 50px;
+}
+
+/* --- end of Featured Section--- */
+
+/*--- exciting features starts here ---*/
+
+.exciting-features{
+margin-top: 100px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap: 20px;
+}
+
+.love-enjoy{
+    width: 586px;
+    height: 106px;
+    padding-left: 15px;
+    margin-bottom: 60px;
+}
+.love-enjoy h1{
+    border-left: 5px solid #FF900E;
+    font-size: 36px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.item-1{
+    width:586px;
+    height:151px;
+    padding:20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding:25px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.extra-box{
+    width: 342px;
+    height: 200px;
+    background-color:#FF900E;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    position:relative;
+    bottom: 150px;
+    right: 50px;
+
+}
+.extra-box:hover {
+    background-color: rgb(212, 4, 231);
+    box-shadow: 2px 5px 2px 5px #FF900E;
+    transition: transform .2s;
+    transform: scale(1.1);
+  }
+ .extra-box p{
+    font-size: 18px;
+    padding-top: 50px;
+  }
+/* --- exciting features ends here ----*/
+
+
+/* --- some important facts section starts here --- */
+ .facts-head{
+    width: 542px;
+ }
+ .important-facts{
+    display:flex;
+    justify-content:space-around;
+     margin-top: 50px;
+
+
+ }
+ .fact-1{
+    width:241.83px;
+    height:241.83px;
+    border: 1px solid #FF900E;
+    text-align:center;
+    border-radius: 10px;
+ }
+ .content{
+    margin-top: 40px;
+  }
+
+ .fact-1:hover{
+    border: 1px solid #fa010d;
+    background-color: rgb(185, 255, 127);
+    box-shadow: 2px 2px 2px 2px #FF900E;
+    transition: transform .1s;
+    transform: scale(1.2);
+    border-radius: 50%;
+  }
+ /* --- some important facts section ends here --- */
+
+/* ---------additional section--- */
+ /* team-member sections starts here */
+ .team {
+    width: 1440;
+    margin-top: 100px;
+    padding-top: 20px;
+    text-align:center;
+    height: 500px;
+       
+ }
+.team-member{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.image{
+    width: 300px;
+    height: 350px;
+    border:5px solid grey;
+    border-radius: 10px;
+
+}
+
+.image img{
+    width:200px;
+    height:200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+ /* team member section ends here */
+ /* ---------additional section ends----- */
+
+  /* ---- beginning of our sponsors section--- */
+.Sponsors{
+    display:grid;
+    justify-items: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+}
+.sponsor-head{
+    width: 542px;
+    height:139px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.sponsors-logo{
+    width: 1440px;
+    height:200px;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 50px;
+ }
+ 
+    /* --- Sponsor section ends here --- */
+
+/* ----footer section---- */
+    .footer{
+    height: 70px;
+    background-color: #FFF4E7;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+/* ---- end of footer section---- */
+
+
+/* -------------media queries-------------- */
+
+/* -------Mobile Devices------------ */
+
+@media only screen and (max-width:688px)
+
+{
+
+    .container{
+        width:100%;
+    }
+    .hero {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+        text-align: center;
+
+    }
+    .features-list{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        text-align: center;
+
+    } 
+    .feature-image {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+        text-align: center;
+
+    }
+    .exciting-features {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        text-align: center;
+
+    }
+    .team-member {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        justify-items:center;
+        text-align: center;
+
+    }
+    .Sponsors{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        text-align: center;
+        margin-top:400px;
+
+    }
+    
+    .important-facts{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:center;
+        align-content: center;
+    }
+}
+
+
+/* -- this is the end of the style sheet */
+/* faced some problem with responsiveness, I have to work hard on it in the upcoming days  */
+   
+
